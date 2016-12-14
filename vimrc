@@ -128,6 +128,7 @@ let g:ctrlp_custom_ignore = {
 map <Leader>h :noh<CR>
 
 set pastetoggle=<F2>
+:map <F5> :setlocal spell! spelllang=en_us<CR>
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
