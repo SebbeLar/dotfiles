@@ -18,7 +18,7 @@ Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
 
 Plugin 'vimwiki/vimwiki'
-Plugin 'townk/vim-autoclose'
+Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'vim-airline/vim-airline'
 
