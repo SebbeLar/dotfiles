@@ -32,6 +32,7 @@ Plugin 'dracula/vim'
 
 Plugin 'airblade/vim-gitgutter'
 
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'valloric/youcompleteme'
 
@@ -41,7 +42,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
-filetype plugin on
+filetype plugin indent on
 
 set relativenumber
 set linebreak
@@ -58,10 +59,9 @@ set incsearch
 
 set autoindent
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
+set tabstop=2
 set smartindent
-set smarttab
-set softtabstop=4
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
@@ -108,6 +108,9 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " No docs window for YouCompleteMe
+
+" Make editorconfig work with vim-fugitive and don't use over ssh
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 let g:mustache_abbreviations = 1
 

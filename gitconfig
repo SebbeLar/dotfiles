@@ -2,7 +2,7 @@
 	default = matching
 [core]
 	excludesfile = /Users/sebastianlarsson/.gitignore_global
-	editor = vim
+	editor = mvim -v
 [user]
 	name = Sebastian Larsson
 	email = sebberlarsson@hotmail.com
