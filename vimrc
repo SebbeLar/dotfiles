@@ -38,7 +38,7 @@ Plugin 'valloric/youcompleteme'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-
+Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
