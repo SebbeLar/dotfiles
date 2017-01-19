@@ -45,6 +45,7 @@ call vundle#end()
 filetype plugin indent on
 
 set relativenumber
+set number
 set linebreak
 set showbreak=+++
 set textwidth=100
