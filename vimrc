@@ -33,7 +33,8 @@ Plugin 'dracula/vim'
 Plugin 'airblade/vim-gitgutter'
 
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
+Plugin 'w0rp/ale'
 Plugin 'valloric/youcompleteme'
 
 Plugin 'tpope/vim-fugitive'
@@ -79,7 +80,8 @@ let g:Powerline_symbols = 'fancy'
 
 set ruler
 set laststatus=2
-set statusline+=%{fugitive#statusline()}
+" set statusline+=%{fugitive#statusline()}
+let g:airline_section_error = '%{ALEGetStatusLine()}'
 set undolevels=1000
 set backspace=indent,eol,start
 
@@ -104,6 +106,10 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_elm_checkers = ["elm_make"]
 let g:jsx_ext_required = 0
 
+let g:ale_linters = {
+\  'javascript': ['eslint'],
+\}
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
