@@ -1,5 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/sebastianlarsson/.oh-my-zsh
+export FZF_DEFAULT_OPTS='--height 40%'
+export FZF_DEFAULT_COMMAND='ag -g ""'
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -89,3 +91,4 @@ alias ez='vim ~/dotfiles/zshrc'
 alias sz='source ~/.zshrc'
 alias grep='Ack'
 alias tree='tree -C -I node_modules'
+alias remindme='cat ~/vimwiki/Remind.wiki'

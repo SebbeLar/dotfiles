@@ -40,6 +40,7 @@ Plugin 'valloric/youcompleteme'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'mileszs/ack.vim'
+Plugin 'junegunn/fzf.vim'
 Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
@@ -65,6 +66,7 @@ set shiftwidth=2
 set tabstop=2
 set smartindent
 
+set rtp+=/usr/local/opt/fzf
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
@@ -97,6 +99,7 @@ inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
+nnoremap <C-p> :Files<CR>
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 
