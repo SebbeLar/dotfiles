@@ -3,7 +3,7 @@
 
 [core]
 	excludesfile = /Users/sebastianlarsson/.gitignore_global
-	editor = mvim -v
+	editor = nvim
 
 [user]
 	name = Sebastian Larsson
