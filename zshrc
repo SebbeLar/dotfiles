@@ -60,6 +60,8 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mongodb/bin
 
 source $ZSH/oh-my-zsh.sh
 
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -92,3 +94,4 @@ alias sz='source ~/.zshrc'
 alias grep='Ack'
 alias tree='tree -C -I node_modules'
 alias remindme='cat ~/vimwiki/Remind.wiki'
+alias dotfiles='cd ~/dotfiles'
