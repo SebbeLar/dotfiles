@@ -26,10 +26,15 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 Plug 'trevordmiller/nova-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'townk/vim-autoclose'
 Plug 'w0rp/ale'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'https://github.com/jiangmiao/auto-pairs'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 
 " javascript
 "" Javascript Bundle
@@ -60,10 +65,13 @@ set binary
 set backspace=indent,eol,start
 
 "" Tabs. May be overriten by autocmd rules
-set tabstop=2
+set tabstop=8
 set softtabstop=0
-set shiftwidth=2
 set expandtab
+set shiftwidth=2
+set smarttab
+set scrolloff=5
+set hidden
 
 "" Indentation
 set autoindent
@@ -125,6 +133,19 @@ if has('macunix')
   vmap <C-x> :!pbcopy<CR>
   vmap <C-c> :w !pbcopy<CR><CR>
 endif
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+
+" Langservers
+let g:LanguageClient_serverCommands = {
+    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+    \ }
+
+augroup filetype_javascript
+    autocmd!
+    autocmd BufReadPost *.js setlocal filetype=javascript
+  augroup END
 
 " Ale
 let g:ale_linters = {'javascript': ['eslint']}
