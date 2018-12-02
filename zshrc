@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract node npm brew z tmux web-search)
+plugins=(git extract node npm brew z tmux web-search zsh-autosuggestions)
 
 # User configuration
 
