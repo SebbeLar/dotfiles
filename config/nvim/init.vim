@@ -140,12 +140,8 @@ let g:deoplete#enable_at_startup = 1
 " Langservers
 let g:LanguageClient_serverCommands = {
     \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['/usr/local/bin/javascript-typescript-stdio'],
     \ }
-
-augroup filetype_javascript
-    autocmd!
-    autocmd BufReadPost *.js setlocal filetype=javascript
-  augroup END
 
 " Ale
 let g:ale_linters = {'javascript': ['eslint']}
