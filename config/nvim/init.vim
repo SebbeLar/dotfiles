@@ -61,7 +61,7 @@ set backspace=indent,eol,start
 
 "" Tabs. May be overriten by autocmd rules
 set tabstop=2
-set softtabstop=0
+set softtabstop=2
 set expandtab
 set shiftwidth=2
 set smarttab
