@@ -14,3 +14,12 @@ nnoremap <LocalLeader>e :edit <C-R>=expand('%:p:h') . '/'<CR>
 
 " <LocalLeader>v - Edit init.vim
 nnoremap <LocalLeader>v :edit ~/dotfiles/config/nvim/init.vim<CR>
+
+" <Leader>| Maximize the buffer horizontaly
+nnoremap <Leader><bar> <C-w><bar>
+
+" <Leader>- Maximize the buffer vertically
+nnoremap <Leader>- <C-w>_
+
+" <Leader>= Equalize all buffers in size
+nnoremap <Leader>= <C-w>=
