@@ -74,6 +74,7 @@ set smartindent
 
 "" Map leader to ,
 let mapleader=','
+let maplocalleader = " "
 
 "" Searching
 set hlsearch
