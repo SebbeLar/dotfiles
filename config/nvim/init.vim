@@ -29,6 +29,8 @@ Plug 'w0rp/ale'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-vinegar'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
